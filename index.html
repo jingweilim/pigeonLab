@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>take-home-challenge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div id="app">
+    <div class="boxShdow" id="whiteBox">
+      <div id="leftBox">
+        <div class="boxText">
+          <div class="textMargin alignCenter header">
+            Sign in
+          </div>
+          <div class="msg">
+            <div class=" textMargin">
+              <label for="email">Email</label>
+            </div>
+            <div class="inputWidth">
+              <input type="text" id="email" name="email" placeholder="pigeon@nestcoop.com">
+            </div>
+            <div class=" textMargin">
+              <label for="password">Password</label>
+            </div>
+            <div class="inputWidth">
+              <input type="password" id="password" name="password" placeholder="******">
+            </div>
+            <button class="button" id="LoginButton" onclick="alert('login!')">Login</button>
+          </div>
+        </div>
+        <div class="smallText" id="createAcc" onclick="moveBoxLeft()">
+          Create account
+        </div>
+      </div>
+      <div id="rightBox">
+        <div class="boxText">
+          <div class="textMargin alignCenter header">Create Account</div>
+          <div class="msg">
+            <div class=" textMargin">
+              <label for="email">Email</label>
+            </div>
+            <div class="inputWidth">
+              <input type="text" id="email2" name="email" placeholder="pigeon@nestcoop.com">
+            </div>
+            <div class=" textMargin">
+              <label for="password">Password</label>
+            </div>
+            <div class="inputWidth">
+              <input type="password" id="password2" name="password" placeholder="******">
+            </div>
+            <div class=" textMargin">
+              <label for="confirmPassword">Confirm Password</label>
+            </div>
+            <div class="inputWidth">
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="******">
+            </div>
+            <button class="button" id="CreateButton" onclick="alert('register!')">Create</button>
+          </div>
+        </div>
+        <div class="smallText" id="createAcc" onclick="moveBoxRight()">
+          Already have an account?
+        </div>
+      </div>
+      <div id="movingBox">
+        <div class="alignCenter middle text2" id="movingBoxText">
+          <div class="header2"></div>
+          <br>
+          <div class="paragraph"></div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div id="warningMsg">
+        <img src="warning.png"></img>
+        Warning
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
